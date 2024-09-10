@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Emojis em Umbundu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .quiz-container {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .quiz-question {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        .quiz-options {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .quiz-options button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .quiz-options button:hover {
+            background-color: #45a049;
+        }
+        .quiz-feedback {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Quiz de Emojis em Umbundu</h1>
+
+    <!-- Barra de navegação -->
+    <nav>
+        <a href="index.html">Dicionário</a>
+        <a href="cultura-umbundu.html">Cultura Umbundu</a>
+    </nav>
+
+    <div class="quiz-container">
+        <div class="quiz-question" id="quiz-question">Qual é a tradução de 😊 em Umbundu?</div>
+        <div class="quiz-options">
+            <button onclick="checkAnswer('Ukule')">Ukule</button>
+            <button onclick="checkAnswer('Vila')">Vila</button>
+            <button onclick="checkAnswer('Omutima')">Omutima</button>
+        </div>
+        <div class="quiz-feedback" id="quiz-feedback"></div>
+    </div>
+
+    <script>
+        var correctAnswer = 'Ukule';
+
+        function checkAnswer(answer) {
+            var feedback = document.getElementById('quiz-feedback');
+            if (answer === correctAnswer) {
+                feedback.innerHTML = "Correto! 😊 significa Ukule (Feliz).";
+                feedback.style.color = "green";
+            } else {
+                feedback.innerHTML = "Errado! Tente novamente.";
+                feedback.style.color = "red";
+            }
+        }
+    </script>
+
+</body>
+</html>
