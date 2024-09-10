@@ -61,12 +61,31 @@
         }
         .emoji {
             font-size: 2em;
+            transition: transform 0.3s;
+        }
+        .card:hover .emoji {
+            transform: rotate(20deg);
         }
         .audio-container {
             margin-top: 10px;
         }
         .audio-container audio {
             width: 100%;
+        }
+        .share-container {
+            margin-top: 10px;
+        }
+        .share-button {
+            margin-right: 5px;
+            text-decoration: none;
+            color: white;
+            background-color: #4CAF50;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .share-button:hover {
+            background-color: #45a049;
         }
         @media (max-width: 600px) {
             .card {
@@ -103,8 +122,72 @@
                     Seu navegador não suporta o elemento de áudio.
                 </audio>
             </div>
+            <div class="share-container">
+                <a class="share-button" href="https://twitter.com/intent/tweet?text=😊 significa Ukule (Feliz) em Umbundu" target="_blank">Compartilhar no Twitter</a>
+                <a class="share-button" href="https://api.whatsapp.com/send?text=😊 significa Ukule (Feliz) em Umbundu" target="_blank">Compartilhar no WhatsApp</a>
+            </div>
         </div>
-        <!-- Continue com mais emojis... -->
+        <div class="card" data-emoji="😂" data-umbundu="Vila" data-portugues="Rir">
+            <div class="emoji" title="Rir no contexto cultural Umbundu">😂</div>
+            <div>Vila</div>
+            <div>Rir</div>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="vila.mp3" type="audio/mpeg">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+            </div>
+            <div class="share-container">
+                <a class="share-button" href="https://twitter.com/intent/tweet?text=😂 significa Vila (Rir) em Umbundu" target="_blank">Compartilhar no Twitter</a>
+                <a class="share-button" href="https://api.whatsapp.com/send?text=😂 significa Vila (Rir) em Umbundu" target="_blank">Compartilhar no WhatsApp</a>
+            </div>
+        </div>
+        <div class="card" data-emoji="❤️" data-umbundu="Omutima" data-portugues="Amor">
+            <div class="emoji" title="Amor no contexto cultural Umbundu">❤️</div>
+            <div>Omutima</div>
+            <div>Amor</div>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="omutima.mp3" type="audio/mpeg">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+            </div>
+            <div class="share-container">
+                <a class="share-button" href="https://twitter.com/intent/tweet?text=❤️ significa Omutima (Amor) em Umbundu" target="_blank">Compartilhar no Twitter</a>
+                <a class="share-button" href="https://api.whatsapp.com/send?text=❤️ significa Omutima (Amor) em Umbundu" target="_blank">Compartilhar no WhatsApp</a>
+            </div>
+        </div>
+        <div class="card" data-emoji="😢" data-umbundu="Oluva" data-portugues="Triste">
+            <div class="emoji" title="Triste no contexto cultural Umbundu">😢</div>
+            <div>Oluva</div>
+            <div>Triste</div>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="oluva.mp3" type="audio/mpeg">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+            </div>
+            <div class="share-container">
+                <a class="share-button" href="https://twitter.com/intent/tweet?text=😢 significa Oluva (Triste) em Umbundu" target="_blank">Compartilhar no Twitter</a>
+                <a class="share-button" href="https://api.whatsapp.com/send?text=😢 significa Oluva (Triste) em Umbundu" target="_blank">Compartilhar no WhatsApp</a>
+            </div>
+        </div>
+        <div class="card" data-emoji="😡" data-umbundu="Okwita" data-portugues="Bravo">
+            <div class="emoji" title="Bravo no contexto cultural Umbundu">😡</div>
+            <div>Okwita</div>
+            <div>Bravo</div>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="okwita.mp3" type="audio/mpeg">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+            </div>
+            <div class="share-container">
+                <a class="share-button" href="https://twitter.com/intent/tweet?text=😡 significa Okwita (Bravo) em Umbundu" target="_blank">Compartilhar no Twitter</a>
+                <a class="share-button" href="https://api.whatsapp.com/send?text=😡 significa Okwita (Bravo) em Umbundu" target="_blank">Compartilhar no WhatsApp</a>
+            </div>
+        </div>
+        <!-- Continue adicionando mais emojis... -->
     </div>
 
     <script>
